@@ -1,0 +1,7 @@
+figure > img {
+    width: 50%;
+}
+
+img.pano {
+    width: 100%
+}
