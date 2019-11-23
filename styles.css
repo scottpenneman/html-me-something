@@ -1,7 +1,81 @@
-figure > img {
-    width: 50%;
+body {
+    background-color: dodgerblue;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-img.pano {
-    width: 100%
+h1 {
+    text-align: center;
 }
+
+h2 {
+    margin-left: 15px;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover,
+a:active {
+    color: red;
+}
+
+figure {
+    display: inline-block;
+}
+
+.polaroid {
+    height: 525px;
+    max-width: 525px;
+    border-radius: 5px;
+    border: 10px solid white;
+    background-color: white;
+}
+
+.polaroid > img {
+    height: 425px;
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+figcaption {
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+    border: 5px solid white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}
+
+@media only screen and (min-width: 635px) {
+    #small-screen-title {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 635px) {
+    
+    #large-screen-title {
+        display: none;
+    }
+
+    .polaroid {
+        width: 100%;
+        border: none;
+        margin-left: 0px;
+    }
+
+    .polaroid > img {
+        height: 425px;
+        border-radius: 5px;
+    }
+
+    figcaption {
+        background-color: white;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+}
+
