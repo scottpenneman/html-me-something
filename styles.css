@@ -9,11 +9,28 @@ h1 {
 
 h2 {
     margin-left: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 20px;
+}
+
+li a {
 }
 
 a:link,
 a:visited {
     color: white;
+    text-decoration: none;
 }
 
 a:hover,
@@ -21,8 +38,10 @@ a:active {
     color: red;
 }
 
-figure {
-    display: inline-block;
+.figure-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
 }
 
 .polaroid {
@@ -76,6 +95,14 @@ figcaption {
         background-color: white;
         font-family: 'Permanent Marker', cursive;
     }
+}
 
+@media only screen and (max-width: 1300px) {
+    
+    .figure-container {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+        }
 }
 
