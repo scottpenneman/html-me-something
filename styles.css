@@ -22,11 +22,6 @@ ul {
     text-align: center;
 }
 
-/* nav {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-} */
-
 li {
     display: inline-block;
     margin-top: 15px;
